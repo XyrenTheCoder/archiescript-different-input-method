@@ -4,9 +4,9 @@ A custom esolang made by thatOneArchUser
 ## How to use it?
 Here are the commands
 
-`+` increases the "value" integer
+`+` increases the [value](https://github.com/thatOneArchUser/archiescript/blob/main/archiescript.py#L8) integer
 
-`-` decreases the "value" integer
+`-` decreases the value integer
 
 `#` appends a lowercase letter in the array
 
