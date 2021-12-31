@@ -8,7 +8,7 @@ Here are the commands
 
 `-` decreases the value integer
 
-`#` appends a lowercase letter in the array
+`#` appends a lowercase letter in the [array](https://github.com/thatOneArchUser/archiescript/blob/main/archiescript.py#L10)
 
 `@` appends a uppercase letter in the array
 
