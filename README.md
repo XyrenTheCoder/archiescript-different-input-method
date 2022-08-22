@@ -2,7 +2,7 @@
 A custom esolang made by thatOneArchUser, this repo contains encoder and decoder
 
 ## How to use it?
-Here are the commands
+Encoder and Decoder listen to these commands:
 
 `+` increases the [value](https://github.com/thatOneArchUser/archiescript/blob/main/decoder.py#L5) integer
 
