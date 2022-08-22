@@ -1,8 +1,11 @@
-import os, sys
+import os, sys, string
 
 def encode(text):
     arr = []
     for i in text:
+        if i not in list(string.letters + string.digits):
+            print(f"Invalid character at position {text.index(i)}")
+            return
         if i == " ": arr.append("*")
         elif i.isupper(): arr.append(f"{(int(hex(ord(i)), 16) - int('0x40', 16))*'+'}@")
         elif i.islower(): arr.append(f"{(int(hex(ord(i)), 16) - int('0x60', 16))*'+'}#")
