@@ -1,6 +1,5 @@
 import os
-if os.name == "nt": os.system("cls")
-else: os.system("clear")
+os.system("cls" if os.name == "nt" else "clear")
 print("Archiescript v1.0\n")
 
 value = 0
