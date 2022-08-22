@@ -1,24 +1,39 @@
-import os
+import os, sys
 os.system("cls" if os.name == "nt" else "clear")
 print("Archiescript v1.0\n")
 
-value = 0
-cmd = input(">> ")
-l = []
-for i in cmd: l.append(i)
+def encode(text):
+    arr = []
+    for i in text:
+        if i == " ": arr.append("*")
+        elif i.isupper(): arr.append(f"{(int(hex(ord(i)), 16) - int('0x40', 16))*'+'}@")
+        elif i.islower(): arr.append(f"{(int(hex(ord(i)), 16) - int('0x60', 16))*'+'}#")
+        elif i.isdigit:
+            var = "+"*int(i) + "&!"
+            arr.append(var)
+    arr.append(".;")
+    return ''.join(arr)
 
-text = []
-for c in l:
-    if c == "+": value += 1
-    elif c == "-": value -= 1
-    elif c == ".": print(''.join(text))
-    elif c == '#':
-        text.append(chr(0x60+value))
-        value = 0
-    elif c == '@':
-        text.append(chr(0x40+value))
-        value = 0
-    elif c == ";": quit()
-    elif c == "*": text.append(" ")
-    elif c == "!": value = 0
-    elif c == "&": text.append(str(value))
+def decode(text):
+    value = 0
+    arr = []
+    for i in text:
+        if i == "+": value += 1
+        elif i == "-": value -= 1
+        elif i == ".": print(''.join(arr))
+        elif i == "#":
+            arr.append(chr(0x60+value))
+            value = 0
+        elif i == "@":
+            arr.append(chr(0x40+value))
+            value = 0
+        elif i == ";": quit()
+        elif i == "*": arr.append(" ")
+        elif i == "!": value = 0
+        elif i == "&": arr.append(str(value))
+    return ''.join(arr)
+
+if __name__ == "__main__":
+    if sys.argv[1] == "encode": print(encode(sys.argv[2]))
+    elif sys.argv[1] == "decode": decode(sys.argv[2])
+    else: print(f"Invalid arguments\nUsage: {sys.argv[0]} <encode/decode> <string>")
