@@ -1,5 +1,5 @@
 # archiescript
-A custom esolang made by thatOneArchUser, this repo contains encoder and decoder
+A custom esolang made by thatOneArchUser, this repository contains encoder and decoder
 
 ## How to use it?
 Encoder and Decoder listen to these commands:
