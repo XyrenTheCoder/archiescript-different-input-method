@@ -1,7 +1,7 @@
 # archiescript
 A custom esolang made by thatOneArchUser, this repository contains encoder and decoder
 
-## How to use it?
+## How they works?
 Encoder and Decoder listen to these commands:
 
 `+` increases the [value](https://github.com/thatOneArchUser/archiescript/blob/main/decoder.py#L5) integer
