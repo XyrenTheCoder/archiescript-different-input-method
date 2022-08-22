@@ -22,5 +22,3 @@ Encoder and Decoder listen to these commands:
 
 `;` exits
 
-## Hello world
-`workin on encoder`
