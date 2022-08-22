@@ -1,14 +1,14 @@
 # archiescript
-A custom esolang made by thatOneArchUser
+A custom esolang made by thatOneArchUser, this repository contains encoder and decoder
 
-## How to use it?
-Here are the commands
+## How they works?
+Encoder and Decoder listen to these commands:
 
-`+` increases the [value](https://github.com/thatOneArchUser/archiescript/blob/main/archiescript.py#L8) integer
+`+` increases the [value](https://github.com/thatOneArchUser/archiescript/blob/main/decoder.py#L5) integer
 
 `-` decreases the value integer
 
-`#` appends a lowercase letter in the [array](https://github.com/thatOneArchUser/archiescript/blob/main/archiescript.py#L14)
+`#` appends a lowercase letter in the [array](https://github.com/thatOneArchUser/archiescript/blob/main/decoder.py#L10)
 
 `@` appends a uppercase letter in the array
 
@@ -23,4 +23,4 @@ Here are the commands
 `;` exits
 
 ## Hello world
-`++++++++@+++++#++++++++++++#++++++++++++#+++++++++++++++#*+++++++++++++++++++++++@+++++++++++++++#++++++++++++++++++#++++++++++++#++++#.;`
+`workin on encoder`
