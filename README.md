@@ -22,3 +22,5 @@ Encoder and Decoder listen to these commands:
 
 `;` exits
 
+## Usage
+`python main.py <encode/decode> <string>`
