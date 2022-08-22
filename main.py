@@ -18,7 +18,9 @@ def decode(text):
     for i in text:
         if i == "+": value += 1
         elif i == "-": value -= 1
-        elif i == ".": print(''.join(arr))
+        elif i == ".":
+            print(''.join(arr))
+            arr = []
         elif i == "#":
             arr.append(chr(0x60+value))
             value = 0
@@ -29,7 +31,7 @@ def decode(text):
         elif i == "*": arr.append(" ")
         elif i == "!": value = 0
         elif i == "&": arr.append(str(value))
-    return ''.join(arr)
+    return
 
 if __name__ == "__main__":
     if sys.argv[1] == "encode": print(encode(sys.argv[2]))
