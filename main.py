@@ -34,6 +34,9 @@ def decode(text):
     return ''.join(arr)
 
 if __name__ == "__main__":
+    if len(sys.argv < 3):
+        print("missing arguments")
+        sys.exit(1)
     if sys.argv[1] == "encode": print(encode(sys.argv[2:]))
     elif sys.argv[1] == "decode": print(decode(sys.argv[2]))
     else: print(f"Invalid arguments\nUsage: {sys.argv[0]} <encode/decode> <string>")
