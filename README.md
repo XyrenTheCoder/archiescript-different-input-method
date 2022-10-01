@@ -14,9 +14,9 @@ Encoder and Decoder listen to these commands:
 
 `*` appends space in the array
 
-`!` resets the value
+`~` resets the value
 
-`&` prints the value integer
+`%` prints the value integer
 
 `.` prints the data stored inside the array
 
