@@ -6,8 +6,6 @@ Encoder and Decoder listen to these commands:
 
 `+` increases the [value](https://github.com/thatOneArchUser/archiescript/blob/main/main.py#L21) integer
 
-`-` decreases the value integer
-
 `#` appends a lowercase letter in the [array](https://github.com/thatOneArchUser/archiescript/blob/main/main.py#L25)
 
 `@` appends a uppercase letter in the array
