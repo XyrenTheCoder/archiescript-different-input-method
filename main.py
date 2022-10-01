@@ -33,7 +33,7 @@ def decode(text):
     return ''.join(arr)
 
 if __name__ == "__main__":
-    if len(sys.argv < 3):
+    if len(sys.argv) < 3:
         print("missing arguments")
         sys.exit(1)
     if sys.argv[1] == "encode": print(encode(sys.argv[2:]))
