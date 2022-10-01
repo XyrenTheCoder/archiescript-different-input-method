@@ -19,7 +19,6 @@ def decode(text):
     out = str()
     for i in text:
         if i == "+": value += 1
-        elif i == "-": value -= 1
         elif i == ".": out += ''.join(arr)
         elif i == "#":
             arr.append(chr(0x60+value))
