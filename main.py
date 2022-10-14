@@ -40,8 +40,6 @@ def main():
 while True:
     main()
     b = a.split()
-    if b[0] == "encode":
-        encode(b[1:])
-    elif b[0] == "decode":
-        decode(b[1])
+    if b[0] == "encode": encode(b[1:])
+    elif b[0] == "decode": decode(b[1])
     else: print("usage: <encode/decode> <text>")
