@@ -32,14 +32,16 @@ def decode(text):
         elif i == "%": arr.append(str(value))
     return ''.join(arr)
 
-if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("missing arguments")
-        sys.exit(1)
-    if sys.argv[1] == "encode": print(encode(sys.argv[2:]))
-    elif sys.argv[1] == "decode": print(decode(sys.argv[2]))
-    else: print(f"Invalid arguments\nUsage: {sys.argv[0]} <encode/decode> <string>")
+def main():
+    global a
+    a = input("input <encode/decode> <text>: ")
+    return main(), a
 
-
-
-#
+while True:
+    main()
+    global b
+    b = a.split()
+    if a.startswith("encode"):
+        print(encode(b[1:]))
+    elif a.startswith("decode"):
+        print(decode(b[1:]))
