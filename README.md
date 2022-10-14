@@ -21,4 +21,5 @@ Encoder and Decoder listen to these commands:
 `;` exits
 
 ## Usage
-`python main.py <encode/decode> <string>`
+use `<encode/decode> <text>` after running the file using `python main.py`
+
